@@ -46,3 +46,5 @@
     - 별찍기
     - 함수
     - 객체지향
+
+    ![folium사용법](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/Image_folium_map.png)
