@@ -47,4 +47,10 @@
     - 함수
     - 객체지향
 
+
+- folium 기본사용
     ![folium사용법](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/Image_folium_map.png)
+
+## 5일차
+- 파이썬 응용
+    - json 입출력
