@@ -94,6 +94,7 @@
             th.start() # BackWorker 내의 self.run() 실행
             th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
             # ...    
+        
         # 스레드에서 시그널이 넘어오면 UI처리를 대신 해주는 슬롯함수
         @pyqtSlot(int) # BackWorker 스레드에서 self.initSignal.emit() 동작해서 실행
         def initPgbTask(self, maxVal):
