@@ -55,3 +55,21 @@
 - 파이썬 응용
     - json 입출력
     - QR code 생성 및 출력
+
+## 6일차
+- Python 라이브러리 경로 : C:\DEV\Langs\Python311\Lib\site-packages
+
+- 파이썬 응용
+     - Window App(PyQt) 만들기
+
+    ```python
+    > pip install PyQt5
+    > pip install PyQt5Designer
+    ```
+
+    - PyQt5 기본실행
+    - QtDesigner 사용법
+    - ☆☆☆ Thread 학습 : UI 쓰레드와 Background 쓰레드 분리
+        - GIL 병렬 프로세싱 더 학습할 것
+
+    ![Thread 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/python_Thread.gif)
