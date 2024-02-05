@@ -73,3 +73,25 @@
         - GIL 병렬 프로세싱 더 학습할 것
 
     ![Thread 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/python_Thread.gif)
+
+    ```python
+    # 쓰레드 클래스에서 시그널 선언
+    class BackWorker(QThread): # PyQt에서 스레드 클래스 상속
+        initSignal = pyqtSignal(int) # 시그널을 UI스레드로 전달하기위한 변수객체
+        setSignal = pyqtSignal(int)
+        # ...
+
+        def run(self) -> None: # 스레드 실행
+            # 스레드로 동작할 내용
+            maxVal = 100000
+            self.initSignal.emit(maxVal) # UI쓰레드로 보내기...
+            # ...
+
+    class qtwin_exam(QWidget):  # UI 스레드
+        # ...
+        def btnStartClicked(self):
+            th = BackWorker(self)
+            th.start() # BackWorker 내의 self.run() 실행
+            th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
+            # ...    
+    ```

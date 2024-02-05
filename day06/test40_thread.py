@@ -21,7 +21,7 @@ class BackWorker(QThread): # PyQt에서 스레드 클래스 상속
         # 스레드로 동작할 내용
         maxVal = 100000
         self.initSignal.emit(maxVal)
-        ###self.parent.pgbTask.setValue(0) # 프로그레스바 0부터 시작 !!Qhread에선 UI관련된 처리르 할 수 없음
+        ###self.parent.pgbTask.setValue(0) # 프로그레스바 0부터 시작 !!Qhread에선 UI관련된 처리를 할 수 없음
         ###self.parent.pgbTask.setRange(0, maxVal)
         for i in range(maxVal+1):
             print_str = f'쓰레드 출력 >> {i}'
