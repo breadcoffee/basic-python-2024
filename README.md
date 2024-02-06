@@ -118,7 +118,7 @@
         - 이미지 뷰어
         - 이미지 에디터
     
-    ![PyQt 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/pypaint.jpg)
+    ![PyQt 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/pypaint.png)
 
 ## 8일차
 - 파이썬 응용
