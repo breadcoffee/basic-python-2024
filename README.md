@@ -101,3 +101,27 @@
             self.pgbTask.setValue(0)
             self.pgbTask.setRange(0, maxVal)
     ```
+
+## 7일차
+- 파이썬 응용
+    - 객체지향 정리
+        - 상속, 오버라이딩(재정의), 오버로딩(같은 이름의 함수를 여러개 활용, 매개변수는 다르게)
+    - 가상환경 Virtualenv
+        - 다른 버전 파이썬도 설치해야 사용 가능
+        - 현재 3.11에서 3.9 가상환경이 필요 시 3.9 버전 파이썬 설치 필요
+
+    ```python
+    > pip install virtualenv
+    ```
+
+    - PyQt5와 응용예제 연습
+        - 이미지 뷰어
+        - 이미지 에디터
+    
+    ![PyQt 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/pypaint.jpg)
+
+## 8일차
+- 파이썬 응용
+    - PyQt5 응용예제 계속
+
+- 파이썬 기본 코딩 테스트
