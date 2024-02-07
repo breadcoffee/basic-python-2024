@@ -121,7 +121,5 @@
     ![PyQt 예제](https://raw.githubusercontent.com/breadcoffee/basic-python-2024/main/images/pypaint.png)
 
 ## 8일차
-- 파이썬 응용
-    - PyQt5 응용예제 계속
-
 - 파이썬 기본 코딩 테스트
+    - 쥬피터 노트북 활용
